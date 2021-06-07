@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{ asset ('/css/style.css') }}">
 
 </head>
 <body>
@@ -42,6 +42,7 @@
                 <div class="card-body">
                   <h5 class="card-title">{{ $item->title }}</h5>
                   <p class="card-text">{{ $item->content }}</p>
+                  <a href="{{ asset('/parallex') }}/{{ $item->id }}">查看更多</a>
 
                 </div>
               </div>
