@@ -33,4 +33,5 @@ Route::get('/product', 'frontController@product'
     // return view('front.product',['name' => 'Potato', 'name2'=>'chocolate','total'=>$total]);
 );
 Route::get('/parallex/{id}','frontController@newsDetail');
+Route::get('product/{id}', 'frontController@productDetail');
 Route::get('/test/{name}/{id}','frontController@test');
