@@ -35,3 +35,6 @@ Route::get('/product', 'frontController@product'
 Route::get('/parallex/{id}','frontController@newsDetail');
 Route::get('product/{id}', 'frontController@productDetail');
 Route::get('/test/{name}/{id}','frontController@test');
+Route::post('/push','frontController@push');
+Route::get('/change','frontController@change' );
+Route::get('/contactus','frontController@contactas2' );

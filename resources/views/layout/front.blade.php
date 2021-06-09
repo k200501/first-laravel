@@ -36,8 +36,17 @@
     <div class="botton">
         <a href="{{ asset('/') }}">首頁</a>
     </div>
+    <div class="botton">
+        <a href="{{ asset('/contactus') }}">聯絡我們</a>
+    </div>
 
 <div class="container">
+    @if (Session::has('message'))
+    <div class="alert alert-success" role="alert">
+        {{ Session::get('message') }}
+    </div>
+
+    @endif
     @yield('content')
 </div>
 <div class="content2">
