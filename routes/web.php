@@ -38,3 +38,26 @@ Route::get('/test/{name}/{id}','frontController@test');
 Route::post('/push','frontController@push');
 Route::get('/change','frontController@change' );
 Route::get('/contactus','frontController@contactas2' );
+// Route::get('app', function(){
+//     return view('layout.app');
+// });
+
+
+
+
+
+//end
+Route::get('/admin', function () {
+    return view('admin.index');
+
+});
+Route::get('/admin/contactus', 'ContactusController@Contactus');
+Route::get('/admin/contactus/edit','ContactusController@edit');
+Route::post('/send','ContactusController@send');
+Route::get('/admin/contactus/{id}','ContactusController@contactusdetail');
+Route::post('admin/contactus/update/{id}','ContactusController@update');
+Route::delete('/admin/contactus/delete/{id}','ContactusController@contactusdelete');
+// Route::post('admin/contactus/delete/{id}', 'ContactusController@delete');
+
+//產品介紹後台
+Route::get('/admin/product', 'ContactusController@product');
