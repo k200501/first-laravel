@@ -70,7 +70,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="{{ asset('/admin/product') }}" >產品頁後台</a>
+        <a class="nav-link" href="{{ asset('/admin/products') }}" >產品頁後台</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>

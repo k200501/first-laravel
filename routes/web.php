@@ -60,4 +60,10 @@ Route::delete('/admin/contactus/delete/{id}','ContactusController@contactusdelet
 // Route::post('admin/contactus/delete/{id}', 'ContactusController@delete');
 
 //產品介紹後台
-Route::get('/admin/product', 'ContactusController@product');
+Route::get('/admin/products', 'ContactusController@product');
+//新增資料
+Route::get('/admin/products/add','ContactusController@add');
+Route::post('/admin/products/add_detail', 'ContactusController@add_detail');
+//編輯資料
+Route::get('/admin/products/edit/{$id}','ContactusController@product_edit');
+Route::post('/admin/products/edit/edit/{id}', 'ContactusController@product_edit_detail');
